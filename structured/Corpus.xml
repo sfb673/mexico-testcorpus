@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Corpus identifier="a" name="A">
+
+	<Designs>
+		<Design identifier="b" name="B">
+			<DesignComponent identifier="x" name="X" />
+			<DesignComponent identifier="y" name="Y" />
+		</Design>
+		<Design identifier="c" name="C"/>
+		<Design identifier="d" name="D"/>
+		<Design identifier="e" name="E"/>
+	</Designs>
+
+	<Trials>
+		<Trial identifier="f" name="F" design_id="b" />
+		<Trial identifier="g" name="G" design_id="b" />
+		<Trial identifier="h" name="H" design_id="c" />
+		<Trial identifier="i" name="I" />
+	</Trials>
+	
+	<Resources>
+		<Resource identifier="j" name="J" trial_id="f" design_component_id="x">
+			<URL href="http://foo.bar"/>
+		</Resource>
+	</Resources>
+
+</Corpus>
