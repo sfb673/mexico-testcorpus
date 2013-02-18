@@ -14,7 +14,7 @@ This corpus contains a single utterance as both video and audio recordings.
 This corpus does not contain any actual resources, it defines a complex
 interwoven corpus structure in the Corpus.xml manifest file.
 
-### mexico (coming soon)
+### mexico
 
 Contains audio recordings of the uttered word "Mexico", along with some
 Praat transcriptions and annotations thereof.
