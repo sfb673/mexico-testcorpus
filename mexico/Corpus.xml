@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Corpus identifier="mexico" name="Mexico Corpus">
+  <Description>This is an example corpus, with the uttered word "Mexico".</Description>
+  <Participants>
+    <Participant identifier="subject" name="Subject" participant_role_id="naive"/>
+  </Participants>
+  <Designs>
+    <Design identifier="mexico-design" name="Mexico Design">
+      <DesignComponent identifier="dc-audio" name="Audio" />
+      <DesignComponent identifier="dc-phonetic-transcription" name="Phonetic Transcription"/>
+      <DesignComponent identifier="dc-syllables" name="Syllables" />
+    </Design>
+  </Designs>
+  <Trials>
+    <Trial identifier="mexico-trial" name="Mexico Trial" cue="mexico" runningnumber="1" design_id="mexico-design"/>
+  </Trials>
+  <Resources>
+    <Resource identifier="mexico-audio" name="mexico.wav">
+      <Description>WAVE audio recording</Description>
+      <LocalFile identifier="mexico-audio-wav" name="Mexico audio, WAV" path="./resources/mexico.wav"/>
+    </Resource>
+    <Resource identifier="mexico-transcription-file" name="Mexico transcription File">
+      <Description>Transcription File, containing all transcription tiers</Description>
+      <LocalFile identifier="mexico-transcription-textgrid" name="Mexico Transcription File, Praat TextGrid" path="./resources/mexico.TextGrid"/>
+      <LocalFile identifier="mexico-transcription-shorttextgrid" name="Mexico Transcription File, Praat ShortTextGrid" path="./resources/mexico.ShortTextGrid"/>
+    </Resource>
+  </Resources>
+</Corpus>
