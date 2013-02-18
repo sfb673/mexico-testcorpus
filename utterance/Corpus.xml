@@ -7,7 +7,10 @@
 	<Designs>
 		<Design identifier="utterance-design" name="Utterance Design">
 			<Description>Design Description</Description>
-		</Design>
+            <DesignComponent identifier="utterance-dc-video" name="Video" media_type_id="video"/>
+            <DesignComponent identifier="utterance-dc-audio" name="Audio" media_type_id="audio"/>
+            <DesignComponent identifier="utterance-dc-annotation" name="Annotation" media_type_id="annotation"/>
+        </Design>
 	</Designs>
 	<Trials>
 		<Trial identifier="utterance-trial" name="Utterance Trial" cue="V0?1" runningnumber="1" design_id="utterance-design">
@@ -15,14 +18,14 @@
 		</Trial>
 	</Trials>
 	<Resources>
-		<Resource identifier="utterance-video" name="utterance.mov">
+		<Resource identifier="utterance-video" name="utterance.mov" design_component_id="utterance-dc-video">
 			<Description>Quicktime Video, original recording</Description>
 			<LocalFile identifier="utterance-video-mov"  name="Utterance video, MOV"  path="./video_files/utterance.mov"/>
 			<LocalFile identifier="utterance-video-mp4"  name="Utterance video, MP4"  path="./video_files/utterance.html5.mp4"/>
 			<LocalFile identifier="utterance-video-ogv"  name="Utterance video, OGV"  path="./video_files/utterance.html5.ogv"/>
 			<LocalFile identifier="utterance-video-webm" name="Utterance video, WebM" path="./video_files/utterance.html5.webm"/>
 		</Resource>
-		<Resource identifier="utterance-audio" name="utterance.mp3">
+		<Resource identifier="utterance-audio" name="utterance.mp3" design_component_id="utterance-dc-audio">
 			<Description>MP3 audio recording, derived from video recording</Description>
 			<LocalFile identifier="utterance-audio-mp3" name="Utterance audio, MP3" path="./audio_files/utterance.mp3"/>
 			<LocalFile identifier="utterance-audio-aac" name="Utterance audio, AAC" path="./audio_files/utterance.html5.aac"/>
