@@ -15,14 +15,15 @@
     <Trial identifier="mexico-trial" name="Mexico Trial" cue="mexico" runningnumber="1" design_id="mexico-design"/>
   </Trials>
   <Resources>
-    <Resource identifier="mexico-audio" name="mexico.wav">
+    <Resource identifier="mexico-audio" name="mexico.wav" media_type_id="audio">
       <Description>WAVE audio recording</Description>
       <LocalFile identifier="mexico-audio-wav" name="Mexico audio, WAV" path="./resources/mexico.wav"/>
     </Resource>
-    <Resource identifier="mexico-transcription-file" name="Mexico transcription File">
+    <Resource identifier="mexico-transcription-file" name="Mexico transcription File" media_type_id="annotation">
       <Description>Transcription File, containing all transcription tiers</Description>
       <LocalFile identifier="mexico-transcription-textgrid" name="Mexico Transcription File, Praat TextGrid" path="./resources/mexico.TextGrid"/>
       <LocalFile identifier="mexico-transcription-shorttextgrid" name="Mexico Transcription File, Praat ShortTextGrid" path="./resources/mexico.ShortTextGrid"/>
+      <LocalFile identifier="mexico-transcription-toe" name="Mexico Transcription File, ToE document" path="./resources/mexico.toe"/>
     </Resource>
   </Resources>
 </Corpus>

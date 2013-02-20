@@ -1,16 +1,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<EventDocument>
+<EventDocument id="mexico-annotation">
   <Head></Head>
   <ScaleSet>
-    <Scale continuous="true" id="timeline" mode="Ratio" name="timeline" unit="s" />
+    <Scale continuous="true" id="timeline" name="Timeline" mode="ratio" dimension="time" unit="s" role="single timeline" />
   </ScaleSet>
   <ReferencedObjectList></ReferencedObjectList>
   <AgentList></AgentList>
   <LayerStructure>
-    <Layer id="silences" name="silences" />
-    <Layer id="phonemes" name="phonemes" />
-    <Layer id="syllables" name="syllables" />
-    <Layer id="words" name="words" />
+    <Layer id="silences" name="Silences" />
+    <Layer id="phonemes" name="Phonemes" />
+    <Layer id="syllables" name="Syllables" />
+    <Layer id="words" name="Words" />
   </LayerStructure>
   <EventSet>
     <Event>
