@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<EventDocument>
+  <Head></Head>
+  <ScaleSet>
+    <Scale continuous="true" id="timeline" mode="Ratio" name="timeline" unit="s" />
+  </ScaleSet>
+  <ReferencedObjectList></ReferencedObjectList>
+  <AgentList></AgentList>
+  <LayerStructure>
+    <Layer id="silences" name="silences" />
+    <Layer id="phonemes" name="phonemes" />
+    <Layer id="syllables" name="syllables" />
+    <Layer id="words" name="words" />
+  </LayerStructure>
+  <EventSet>
+    <Event>
+      <LinkList>
+        <LayerLink target="silences" />
+        <IntervalLink max="0.13804308390022677" min="0.0" target="timeline" />
+      </LinkList>
+      <Data>
+        <String>silent</String>
+      </Data>
+    </Event>
+    <Event>
+      <LinkList>
+        <LayerLink target="silences" />
+        <IntervalLink max="1.0120861678004536" min="0.13804308390022677" target="timeline" />
+      </LinkList>
+      <Data>
+        <String>sounding</String>
+      </Data>
+    </Event>
+    <Event>
+      <LinkList>
+        <LayerLink target="phonemes" />
+        <IntervalLink max="0.24419133996563067" min="0.13804308390022677" target="timeline" />
+      </LinkList>
+      <Data>
+        <String>m</String>
+      </Data>
+    </Event>
+    <Event>
+      <LinkList>
+        <LayerLink target="phonemes" />
+        <IntervalLink max="0.37770980345703364" min="0.24419133996563067" target="timeline" />
+      </LinkList>
+      <Data>
+        <String>\ef</String>
+      </Data>
+    </Event>
+    <Event>
+      <LinkList>
+        <LayerLink target="phonemes" />
+        <IntervalLink max="0.5203023372828038" min="0.37770980345703364" target="timeline" />
+      </LinkList>
+      <Data>
+        <String>ks</String>
+      </Data>
+    </Event>
+    <Event>
+      <LinkList>
+        <LayerLink target="phonemes" />
+        <IntervalLink max="0.6110430406264757" min="0.5203023372828038" target="timeline" />
+      </LinkList>
+      <Data>
+        <String>\ic</String>
+      </Data>
+    </Event>
+    <Event>
+      <LinkList>
+        <LayerLink target="phonemes" />
+        <IntervalLink max="0.745209651998905" min="0.6110430406264757" target="timeline" />
+      </LinkList>
+      <Data>
+        <String>k</String>
+      </Data>
+    </Event>
+    <Event>
+      <LinkList>
+        <LayerLink target="phonemes" />
+        <IntervalLink max="0.9247466150431701" min="0.745209651998905" target="timeline" />
+      </LinkList>
+      <Data>
+        <String>o</String>
+      </Data>
+    </Event>
+    <Event>
+      <LinkList>
+        <LayerLink target="syllables" />
+        <IntervalLink max="0.37770980345703364" min="0.13804308390022677" target="timeline" />
+      </LinkList>
+      <Data>
+        <String>me</String>
+      </Data>
+    </Event>
+    <Event>
+      <LinkList>
+        <LayerLink target="syllables" />
+        <IntervalLink max="0.6110430406264757" min="0.37770980345703364" target="timeline" />
+      </LinkList>
+      <Data>
+        <String>xi</String>
+      </Data>
+    </Event>
+    <Event>
+      <LinkList>
+        <LayerLink target="syllables" />
+        <IntervalLink max="0.9247466150431701" min="0.6110430406264757" target="timeline" />
+      </LinkList>
+      <Data>
+        <String>co</String>
+      </Data>
+    </Event>
+    <Event>
+      <LinkList>
+        <LayerLink target="words" />
+        <IntervalLink max="0.9247466150431701" min="0.13804308390022677" target="timeline" />
+      </LinkList>
+      <Data>
+        <String>mexico</String>
+      </Data>
+    </Event>
+  </EventSet>
+</EventDocument>
