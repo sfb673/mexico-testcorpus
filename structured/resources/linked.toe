@@ -1,0 +1,29 @@
+<ToeDocument>
+  <Head></Head>
+  <ScaleSet></ScaleSet>
+  <ReferencedObjectList/>
+  <AgentList/>
+  <LayerStructure>
+    <Layer id="layer" name="Layer"/>
+  </LayerStructure>
+  <ItemSet>
+    <Item id="i1">
+      <Links>
+        <LayerLink target="layer"/>
+        <ItemLink target="i2" role="successor"/>
+      </Links>
+      <Data>
+        <String>first</String>
+      </Data>
+    </Item>
+    <Item id="i2">
+      <Links>
+        <LayerLink target="layer"/>
+        <ItemLink target="i1" role="predecessor"/>
+      </Links>
+      <Data>
+        <String>second</String>
+      </Data>
+    </Item>
+  </ItemSet>
+</ToeDocument>
