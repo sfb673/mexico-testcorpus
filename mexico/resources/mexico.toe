@@ -2,15 +2,15 @@
 <ToeDocument>
   <Head/>
   <ScaleSet>
-    <Scale continuous="true" id="timeline" mode="Ratio" name="timeline" unit="s"/>
+    <Scale continuous="true" id="timeline" mode="ratio" name="Timeline" unit="s" dimension="time" role="single timeline" />
   </ScaleSet>
   <ReferencedObjectList/>
   <AgentList/>
   <LayerStructure>
-    <Layer id="silences" name="silences"/>
-    <Layer id="phonemes" name="phonemes"/>
-    <Layer id="syllables" name="syllables"/>
-    <Layer id="words" name="words"/>
+    <Layer id="silences" name="Silences"/>
+    <Layer id="phonemes" name="Phonemes"/>
+    <Layer id="syllables" name="Syllables"/>
+    <Layer id="words" name="Words"/>
   </LayerStructure>
   <ItemSet>
     <Item id="i1">
