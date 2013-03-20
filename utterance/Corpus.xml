@@ -1,5 +1,9 @@
 <?xml version="1.0"?>
-<Corpus identifier="utterance-corpus" name="Utterance Corpus">
+<Corpus xmlns="http://data.sfb673.org/mexico"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://data.sfb673.org/mexico http://data.sfb673.org/mexico/mexico.xsd"
+ identifier="utterance-corpus"
+ name="Utterance Corpus">
 	<Description>This is an example corpus, with the "utterance" sentence.</Description>
 	<Participants>
 		<Participant identifier="subject" name="Subject" participant_role_id="naive"/>
@@ -13,7 +17,7 @@
         </Design>
 	</Designs>
 	<Trials>
-		<Trial identifier="utterance-trial" name="Utterance Trial" cue="V0?1" runningnumber="1" design_id="utterance-design">
+		<Trial identifier="utterance-trial" name="Utterance Trial" cue="V0?1" running_number="1" design_id="utterance-design">
 			<Description>Trial Description</Description>
 		</Trial>
 	</Trials>

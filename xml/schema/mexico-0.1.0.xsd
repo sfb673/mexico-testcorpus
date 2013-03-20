@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://data.sfb673.org/mexico" xmlns:mexico="http://data.sfb673.org/mexico"
+    xmlns="http://data.sfb673.org/mexico" elementFormDefault="qualified" version="0.1.0">
+
+    <xs:attributeGroup name="Identifiable">
+        <xs:attribute name="identifier" type="xs:ID" use="required"/>
+        <xs:attribute name="name" type="xs:string" use="optional"/>
+    </xs:attributeGroup>
+
+    <xs:simpleType name="Description">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:complexType name="Corpus">
+        <xs:sequence>
+            <xs:element name="Description" type="Description" minOccurs="0"/>
+            <xs:element minOccurs="0" name="Participants" type="xs:anyType"/>
+            <xs:element minOccurs="0" name="Variables" type="xs:anyType"/>
+            <xs:element name="Designs" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                    <xs:sequence maxOccurs="unbounded">
+                        <xs:element name="Design" type="Design" minOccurs="0" maxOccurs="unbounded"
+                        />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Trials">
+                <xs:complexType>
+                    <xs:sequence maxOccurs="unbounded">
+                        <xs:element name="Trial" type="Trial"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Resources">
+                <xs:complexType>
+                    <xs:sequence maxOccurs="unbounded">
+                        <xs:element name="Resource" type="Resource"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="Identifiable"/>
+    </xs:complexType>
+
+
+    <xs:complexType name="Design">
+        <xs:sequence>
+            <xs:element name="Description" type="Description" minOccurs="0"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="DesignComponent"
+                type="DesignComponent"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="Identifiable"/>
+    </xs:complexType>
+
+
+
+    <xs:complexType name="Trial">
+        <xs:sequence>
+            <xs:element name="Description" type="Description" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="Identifiable"/>
+        <xs:attribute name="design_id" type="xs:IDREF"/>
+        <xs:attribute name="cue" type="xs:string"/>
+        <xs:attribute name="running_number" type="xs:integer"/>
+    </xs:complexType>
+    <xs:complexType name="Resource">
+        <xs:sequence>
+            <xs:element name="Description" type="Description" minOccurs="0"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="LocalFile"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="URL"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="Identifiable"/>
+        <xs:attributeGroup ref="MediaType"/>
+        <xs:attribute name="design_component_id" type="xs:IDREF"/>
+        <xs:attribute name="trial_id" type="xs:IDREF"/>
+    </xs:complexType>
+    <xs:complexType name="DesignComponent">
+        <xs:sequence>
+            <xs:element name="Description" type="Description" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="Identifiable"/>
+        <xs:attributeGroup ref="Cue"/>
+        <xs:attributeGroup ref="MediaType"/>
+    </xs:complexType>
+    <xs:attributeGroup name="MediaType">
+        <xs:attribute name="media_type_id" type="MediaType-Type"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="Cue">
+        <xs:attribute form="unqualified" name="cue" type="xs:string"/>
+    </xs:attributeGroup>
+    <xs:simpleType name="MediaType-Type">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="video"/>
+            <xs:enumeration value="audio"/>
+            <xs:enumeration value="annotation"/>
+            <xs:enumeration value="other"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="Corpus" type="Corpus"/>
+</xs:schema>

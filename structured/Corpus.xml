@@ -1,5 +1,9 @@
 <?xml version="1.0"?>
-<Corpus identifier="a" name="A">
+<Corpus xmlns="http://data.sfb673.org/mexico"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://data.sfb673.org/mexico http://data.sfb673.org/mexico/mexico.xsd"
+ identifier="a"
+ name="A">
 
 	<Designs>
 		<Design identifier="b" name="B">

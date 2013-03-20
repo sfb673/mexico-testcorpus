@@ -1,5 +1,9 @@
 <?xml version="1.0"?>
-<Corpus identifier="mexico" name="Mexico Corpus">
+<Corpus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://data.sfb673.org/mexico http://data.sfb673.org/mexico/mexico.xsd"
+ xmlns="http://data.sfb673.org/mexico"
+ identifier="mexico"
+ name="Mexico Corpus">
   <Description>This is an example corpus, with the uttered word "Mexico".</Description>
   <Participants>
     <Participant identifier="subject" name="Subject" participant_role_id="naive"/>
@@ -12,7 +16,7 @@
     </Design>
   </Designs>
   <Trials>
-    <Trial identifier="mexico-trial" name="Mexico Trial" cue="mexico" runningnumber="1" design_id="mexico-design"/>
+    <Trial identifier="mexico-trial" name="Mexico Trial" cue="mexico" running_number="1" design_id="mexico-design"/>
   </Trials>
   <Resources>
     <Resource identifier="mexico-audio" name="mexico.wav" media_type_id="audio">
