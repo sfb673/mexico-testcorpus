@@ -1,4 +1,4 @@
-<ToeDocument>
+<FiestaDocument>
   <Head></Head>
   <ScaleSet></ScaleSet>
   <ReferencedObjectList/>
@@ -26,4 +26,4 @@
       </Data>
     </Item>
   </ItemSet>
-</ToeDocument>
+</FiestaDocument>
