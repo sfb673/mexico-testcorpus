@@ -4,12 +4,12 @@
 	xmlns="http://data.sfb673.org/fiesta"
   >
   <Head></Head>
-  <ScaleSet></ScaleSet>
-  <ReferencedObjectList/>
-  <AgentList/>
-  <LayerStructure>
+  <ScaleSet>
+    <Scale id="timeline" />
+  </ScaleSet>
+  <LayerSet>
     <Layer id="layer" name="Layer"/>
-  </LayerStructure>
+  </LayerSet>
   <ItemSet>
     <Item id="i1">
       <Links>
