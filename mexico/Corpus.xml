@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Corpus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://data.sfb673.org/mexico http://data.sfb673.org/mexico/mexico.xsd"
+ xsi:schemaLocation="http://data.sfb673.org/mexico/mexico-current http://data.sfb673.org/mexico/mexico-current.xsd"
  xmlns="http://data.sfb673.org/mexico"
  identifier="mexico"
  name="Mexico Corpus">
