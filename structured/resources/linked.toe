@@ -1,4 +1,8 @@
-<ToeDocument>
+<FiestaDocument
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://data.sfb673.org/fiesta/fiesta-current http://data.sfb673.org/fiesta/fiesta-current.xsd"
+	xmlns="http://data.sfb673.org/fiesta"
+  >
   <Head></Head>
   <ScaleSet></ScaleSet>
   <ReferencedObjectList/>
@@ -26,4 +30,4 @@
       </Data>
     </Item>
   </ItemSet>
-</ToeDocument>
+</FiestaDocument>
