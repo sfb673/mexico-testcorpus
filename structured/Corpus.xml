@@ -24,7 +24,7 @@
 	
 	<Resources>
 		<Resource identifier="j" name="J" trial_id="f" design_component_id="x">
-			<URL href="http://foo.bar"/>
+			<URL identifier="j-url1" href="http://foo.bar"/>
 		</Resource>
       <Resource identifier="construct" media_type_id="annotation">
         <LocalFile identifier="constr-local-file" path="./resources/linked.toe"/>
